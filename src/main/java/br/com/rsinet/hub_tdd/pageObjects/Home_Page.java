@@ -22,9 +22,8 @@ public class Home_Page {
 		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewSingUpToday");
 	}
 
-	public static MobileElement btnHeadphone(AndroidDriver<?> driver) {
-		return (MobileElement) driver.findElementByXPath(
-				"[{\"key\":\"elementId\",\"value\":\"056a5606-312c-4088-b5e1-44b8e818fdf6\",\"name\":\"elementId\"},{\"key\":\"index\",\"value\":\"0\",\"name\":\"index\"},{\"key\":\"package\",\"value\":\"com.Advantage.aShopping\",\"name\":\"package\"},{\"key\":\"class\",\"value\":\"android.widget.ImageView\",\"name\":\"class\"},{\"key\":\"text\",\"value\":\"\",\"name\":\"text\"},{\"key\":\"resource-id\",\"value\":\"com.Advantage.aShopping:id/imageViewCategory\",\"name\":\"resource-id\"},{\"key\":\"checkable\",\"value\":\"false\",\"name\":\"checkable\"},{\"key\":\"checked\",\"value\":\"false\",\"name\":\"checked\"},{\"key\":\"clickable\",\"value\":\"true\",\"name\":\"clickable\"},{\"key\":\"enabled\",\"value\":\"true\",\"name\":\"enabled\"},{\"key\":\"focusable\",\"value\":\"false\",\"name\":\"focusable\"},{\"key\":\"focused\",\"value\":\"false\",\"name\":\"focused\"},{\"key\":\"long-clickable\",\"value\":\"false\",\"name\":\"long-clickable\"},{\"key\":\"password\",\"value\":\"false\",\"name\":\"password\"},{\"key\":\"scrollable\",\"value\":\"false\",\"name\":\"scrollable\"},{\"key\":\"selected\",\"value\":\"false\",\"name\":\"selected\"},{\"key\":\"bounds\",\"value\":\"[0,557][720,854]\",\"name\":\"bounds\"},{\"key\":\"displayed\",\"value\":\"true\",\"name\":\"displayed\"}]");
+	public static MobileElement btnLaptops(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.ImageView");
 	}
 
 	public static MobileElement btnLupa(AndroidDriver<?> driver) {

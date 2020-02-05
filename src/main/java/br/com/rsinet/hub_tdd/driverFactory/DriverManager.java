@@ -19,10 +19,10 @@ public class DriverManager {
 
 			DesiredCapabilities cap = new DesiredCapabilities();
 
-			cap.setCapability("deviceName", "SM-A500M");
-			cap.setCapability("udid", "20faeea1");
+			cap.setCapability("deviceName", "Nexus 5X");
+			cap.setCapability("udid", "emulator-5554");
 			cap.setCapability("platformName", "Android");
-			cap.setCapability("platformVersion", "6.0.1");
+			cap.setCapability("platformVersion", "9.0");
 
 			cap.setCapability("appPackage", "com.Advantage.aShopping");
 			cap.setCapability("appActivity", "com.Advantage.aShopping.SplashActivity");
@@ -36,10 +36,11 @@ public class DriverManager {
 
 	}
 
-	public static void FinalizaDriver(WebDriver driver) {
+	public static AndroidDriver<MobileElement> FinalizaDriver(WebDriver driver) {
 
 		if (null != driver)
-			driver.close();
+			driver.quit();
+		return null;
 	}
 
 }
