@@ -7,23 +7,22 @@ public class Busca_Lupa {
 
 	static AndroidDriver<MobileElement> driver;
 
-	public static MobileElement produto(AndroidDriver<?> driver) {
-		return (MobileElement) driver.findElementByXPath(
-				"//android.widget.RelativeLayout[@content-desc=\"Speakers\"]/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[3]/android.widget.ImageView");
+	public static MobileElement produtoLocalizado(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/imageViewProduct");
 	}
 
 	public static MobileElement produtoTexto(AndroidDriver<?> driver) {
-		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewProductName");
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/editTextSearch");
+		
 	}
 
 	public static MobileElement produtoBusca(AndroidDriver<?> driver) {
-		return (MobileElement) driver.findElementByXPath(
-				"//android.widget.RelativeLayout[@content-desc=\"Search\"]/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[1]");
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/imageViewSearch");
 	}
 
-	public static MobileElement naoLocalizado(AndroidDriver<?> driver) {
-		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewNoProductsToShow");
-	}
+//	public static MobileElement naoLocalizado(AndroidDriver<?> driver) {
+//		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewNoProductsToShow");
+//	}
 
 	
 }

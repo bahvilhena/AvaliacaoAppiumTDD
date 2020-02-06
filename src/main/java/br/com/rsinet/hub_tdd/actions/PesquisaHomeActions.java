@@ -8,8 +8,10 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class PesquisaHomeActions {
 
+	@SuppressWarnings("rawtypes")
 	static TouchAction action;
 
+	@SuppressWarnings("rawtypes")
 	public static void Busca_Produto_Home(AndroidDriver<MobileElement> driver) throws InterruptedException {
 		action = new TouchAction(driver);
 
