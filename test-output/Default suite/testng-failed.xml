@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa">
+      <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
         <methods>
-          <include name="InicioTeste"/>
-          <include name="Busca_Lupa_Positivo"/>
-          <include name="FinalizaTeste"/>
+          <include name="testeDeBuscaPorTelaInicialSucesso"/>
+          <include name="finalizaExtendReport"/>
+          <include name="testeDeBuscaPorTelaInicialFalha"/>
+          <include name="iniciaExtendReport"/>
+          <include name="iniciaTeste"/>
+          <include name="finalizaTeste"/>
         </methods>
-      </class> <!-- br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa -->
+      </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaHome -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

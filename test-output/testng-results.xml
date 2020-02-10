@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-06T08:29:09 BRT" name="Default suite" finished-at="2020-02-06T08:29:28 BRT" duration-ms="18732">
+  <suite started-at="2020-02-10T20:56:45 BRT" name="Default suite" finished-at="2020-02-10T20:57:44 BRT" duration-ms="59031">
     <groups>
     </groups>
-    <test started-at="2020-02-06T08:29:09 BRT" name="Default test" finished-at="2020-02-06T08:29:28 BRT" duration-ms="18732">
-      <class name="br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa">
-        <test-method is-config="true" signature="InicioTeste()[pri:0, instance:br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa@30b7c004]" started-at="2020-02-06T08:29:09 BRT" name="InicioTeste" finished-at="2020-02-06T08:29:20 BRT" duration-ms="10873" status="PASS">
+    <test started-at="2020-02-10T20:56:45 BRT" name="Default test" finished-at="2020-02-10T20:57:44 BRT" duration-ms="59031">
+      <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
+        <test-method is-config="true" signature="iniciaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:56:45 BRT" name="iniciaExtendReport" finished-at="2020-02-10T20:56:45 BRT" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InicioTeste -->
-        <test-method signature="Busca_Lupa_Negativo()[pri:0, instance:br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa@30b7c004]" started-at="2020-02-06T08:29:20 BRT" name="Busca_Lupa_Negativo" finished-at="2020-02-06T08:29:27 BRT" duration-ms="7257" status="PASS">
+        </test-method> <!-- iniciaExtendReport -->
+        <test-method is-config="true" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:56:45 BRT" name="iniciaTeste" finished-at="2020-02-10T20:56:57 BRT" duration-ms="12019" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Busca_Lupa_Negativo -->
-        <test-method signature="Busca_Lupa_Positivo()[pri:0, instance:br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa@30b7c004]" started-at="2020-02-06T08:29:27 BRT" name="Busca_Lupa_Positivo" finished-at="2020-02-06T08:29:27 BRT" duration-ms="41" status="FAIL">
+        </test-method> <!-- iniciaTeste -->
+        <test-method signature="testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:56:57 BRT" name="testeDeBuscaPorTelaInicialFalha" finished-at="2020-02-10T20:57:12 BRT" duration-ms="15051" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1517', ip: '10.1.0.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+System info: host: 'RSI1517', ip: '192.168.15.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: Nexus 5X, platformName: android, platformVersion: 9.0, udid: emulator-5554}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 5608194f-12fe-44f9-9868-45f9abcc2a45
-*** Element info: {Using=id, value=com.Advantage.aShopping:id/editTextSearch}]]>
+Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: Nexus 5X, platformName: android, platformVersion: 9.0, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 68f1b8d4-2368-49e6-b59a-70892d2af776
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[3]/android.widget.EditText}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1517', ip: '10.1.0.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+System info: host: 'RSI1517', ip: '192.168.15.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: Nexus 5X, platformName: android, platformVersion: 9.0, udid: emulator-5554}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 5608194f-12fe-44f9-9868-45f9abcc2a45
-*** Element info: {Using=id, value=com.Advantage.aShopping:id/editTextSearch}
+Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: Nexus 5X, platformName: android, platformVersion: 9.0, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 68f1b8d4-2368-49e6-b59a-70892d2af776
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[3]/android.widget.EditText}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -47,20 +47,25 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at br.com.rsinet.hub_tdd.pageObjects.Busca_Lupa.produtoTexto(Busca_Lupa.java:15)
-at br.com.rsinet.hub_tdd.actions.PesquisaLupaActions.Busca_Lupa_Positivo(PesquisaLupaActions.java:15)
-at br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa.Busca_Lupa_Positivo(TesteBuscaPesquisa.java:26)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at br.com.rsinet.hub_tdd.pageObjects.HomeScreen.localizarLogin(HomeScreen.java:72)
+at br.com.rsinet.hub_tdd.pageObjects.HomeScreen.preencherLogin(HomeScreen.java:78)
+at br.com.rsinet.hub_tdd.testes.BuscaHome.testeDeBuscaPorTelaInicialFalha(BuscaHome.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,12 +99,123 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Busca_Lupa_Positivo -->
-        <test-method is-config="true" signature="FinalizaTeste()[pri:0, instance:br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa@30b7c004]" started-at="2020-02-06T08:29:27 BRT" name="FinalizaTeste" finished-at="2020-02-06T08:29:28 BRT" duration-ms="528" status="PASS">
+        </test-method> <!-- testeDeBuscaPorTelaInicialFalha -->
+        <test-method is-config="true" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:57:12 BRT" name="finalizaTeste" finished-at="2020-02-10T20:57:13 BRT" duration-ms="1022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialFalha status=FAILURE method=BuscaHome.testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FinalizaTeste -->
-      </class> <!-- br.com.rsinet.gub_tdd.testes.TesteBuscaPesquisa -->
+        </test-method> <!-- finalizaTeste -->
+        <test-method is-config="true" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:57:13 BRT" name="iniciaTeste" finished-at="2020-02-10T20:57:25 BRT" duration-ms="12395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method signature="testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:57:25 BRT" name="testeDeBuscaPorTelaInicialSucesso" finished-at="2020-02-10T20:57:42 BRT" duration-ms="16869" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1517', ip: '192.168.15.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: Nexus 5X, platformName: android, platformVersion: 9.0, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 902d7bbc-7d63-45e8-b358-99df93c63662
+*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc="Home Page"]/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[4]/android.widget.ImageView}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1517', ip: '192.168.15.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: Nexus 5X, platformName: android, platformVersion: 9.0, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 902d7bbc-7d63-45e8-b358-99df93c63662
+*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc="Home Page"]/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[4]/android.widget.ImageView}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at br.com.rsinet.hub_tdd.pageObjects.HomeScreen.encontraSpeakers(HomeScreen.java:63)
+at br.com.rsinet.hub_tdd.pageObjects.HomeScreen.clicarSpeakers(HomeScreen.java:68)
+at br.com.rsinet.hub_tdd.testes.BuscaHome.testeDeBuscaPorTelaInicialSucesso(BuscaHome.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeBuscaPorTelaInicialSucesso -->
+        <test-method is-config="true" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:57:42 BRT" name="finalizaTeste" finished-at="2020-02-10T20:57:43 BRT" duration-ms="1079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialSucesso status=FAILURE method=BuscaHome.testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+        <test-method is-config="true" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@419c5f1a]" started-at="2020-02-10T20:57:43 BRT" name="finalizaExtendReport" finished-at="2020-02-10T20:57:44 BRT" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaExtendReport -->
+      </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaHome -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
