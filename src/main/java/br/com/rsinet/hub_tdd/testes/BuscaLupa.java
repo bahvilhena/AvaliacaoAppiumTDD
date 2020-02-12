@@ -17,7 +17,7 @@ import br.com.rsinet.hub_tdd.driverFactory.DriverManager;
 import br.com.rsinet.hub_tdd.pageObjects.HomeScreen;
 import br.com.rsinet.hub_tdd.pageObjects.PesquisaScreen;
 import br.com.rsinet.hub_tdd.report.ExtendReport;
-import br.com.rsinet.hub_tdd.utils.Constantes;
+import br.com.rsinet.hub_tdd.utils.Constants;
 import br.com.rsinet.hub_tdd.utils.ExcelUtils;
 import br.com.rsinet.hub_tdd.utils.MassaDados;
 
@@ -38,7 +38,7 @@ public class BuscaLupa {
 	public void iniciaTeste() throws Exception {
 		driver = DriverManager.iniciarApp();
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaBarra");
+		ExcelUtils.setExcelFile(Constants.Path_TestData + Constants.File_TestData, "PesquisaBarra");
 		PageFactory.initElements(driver, this);
 		ScreenObject manager = new ScreenObject(driver);
 		homeScreen = manager.getHomeScreen();

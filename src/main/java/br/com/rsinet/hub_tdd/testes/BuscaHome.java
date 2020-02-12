@@ -17,7 +17,7 @@ import br.com.rsinet.hub_tdd.driverFactory.DriverManager;
 import br.com.rsinet.hub_tdd.pageObjects.HomeScreen;
 import br.com.rsinet.hub_tdd.pageObjects.PesquisaScreen;
 import br.com.rsinet.hub_tdd.report.ExtendReport;
-import br.com.rsinet.hub_tdd.utils.Constantes;
+import br.com.rsinet.hub_tdd.utils.Constants;
 import br.com.rsinet.hub_tdd.utils.ExcelUtils;
 import br.com.rsinet.hub_tdd.utils.MassaDados;
 
@@ -49,7 +49,7 @@ public class BuscaHome {
 	public void testeDeBuscaPorTelaInicialSucesso() throws Exception {
 		test = ExtendReport.createTest("PesquisaHomeSucesso");
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "Cadastro");
+		ExcelUtils.setExcelFile(Constants.Path_TestData + Constants.File_TestData, "Cadastro");
 		
 		homeScreen.clicarMenu();
 		
@@ -66,7 +66,7 @@ public class BuscaHome {
 		
 		pesquisaScreen.selecionarProduto();
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaCat");
+		ExcelUtils.setExcelFile(Constants.Path_TestData + Constants.File_TestData, "PesquisaCat");
 		
 		String condicao = massaDados.CondicaoAssertMassaSucesso();
 		String mensagem = massaDados.MenssagemAssertMassaSucesso();
@@ -79,7 +79,7 @@ public class BuscaHome {
 	public void testeDeBuscaPorTelaInicialFalha() throws Exception {
 		test = ExtendReport.createTest("PesquisaHomeFalha");
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "Cadastro");
+		ExcelUtils.setExcelFile(Constants.Path_TestData + Constants.File_TestData, "Cadastro");
 		
 		homeScreen.clicarMenu();
 		
@@ -106,7 +106,7 @@ public class BuscaHome {
 		
 		pesquisaScreen.clicarCarrinhoCompras();
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaCat");
+		ExcelUtils.setExcelFile(Constants.Path_TestData + Constants.File_TestData, "PesquisaCat");
 		
 		String condicao = massaDados.CondicaoAssertMassaErro();
 		String mensagem = massaDados.MenssagemAssertMassaErro();

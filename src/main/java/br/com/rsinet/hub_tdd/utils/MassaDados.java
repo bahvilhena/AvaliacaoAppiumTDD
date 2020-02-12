@@ -13,112 +13,109 @@ public class MassaDados {
 		this.driver = driver;
 	}
 	
-	/* Classe responsável por pegar os dados do arquivo de massa e jogar na classe de teste.*/
 	
-	// Cadastro
 	public String UserName() throws Exception {
-		return ExcelUtils.getCellData(1, Constantes.userName);
+		return ExcelUtils.getCellData(1, Constants.userName);
 	}
 	
 	public String Email() throws Exception {
-		return ExcelUtils.getCellData (2, Constantes.email);
+		return ExcelUtils.getCellData (2, Constants.email);
 	}
 	
 	public String Password() throws Exception {
-		return ExcelUtils.getCellData(3, Constantes.password);
+		return ExcelUtils.getCellData(3, Constants.password);
 	}
 	
 	public String ConfirmPassword() throws Exception {
-		return ExcelUtils.getCellData(4, Constantes.confirmPassword);
+		return ExcelUtils.getCellData(4, Constants.confirmPassword);
 	}
 	
 	public String ConfirmPasswordErrado() throws Exception {
-		return ExcelUtils.getCellData(5, Constantes.confirmInvalidPassword);
+		return ExcelUtils.getCellData(5, Constants.confirmInvalidPassword);
 	}
 	
 	public String FirstName() throws Exception {
-		return ExcelUtils.getCellData(6, Constantes.firstName);
+		return ExcelUtils.getCellData(6, Constants.firstName);
 	}
 	
 	public String LastName() throws Exception {
-		return ExcelUtils.getCellData(7, Constantes.lastName);
+		return ExcelUtils.getCellData(7, Constants.lastName);
 	}
 	
 	public String Telefone() throws Exception {
-		return ExcelUtils.getCellData(8, Constantes.telefone);
+		return ExcelUtils.getCellData(8, Constants.telefone);
 	}
 	
 	public String Pais() throws Exception {
-		return ExcelUtils.getCellData(9, Constantes.pais);
+		return ExcelUtils.getCellData(9, Constants.pais);
 	}
 	
 	public String Cidade() throws Exception {
-		return ExcelUtils.getCellData(10, Constantes.cidade);
+		return ExcelUtils.getCellData(10, Constants.cidade);
 	}
 	
 	public String Endereco() throws Exception {
-		return ExcelUtils.getCellData(11, Constantes.endereco);
+		return ExcelUtils.getCellData(11, Constants.endereco);
 	}
 	
 	public String Estado() throws Exception {
-		return ExcelUtils.getCellData(12, Constantes.estado);
+		return ExcelUtils.getCellData(12, Constants.estado);
 	}
 	
 	public String Cep() throws Exception {
-		return ExcelUtils.getCellData(13, Constantes.cep);
+		return ExcelUtils.getCellData(13, Constants.cep);
 	}
 	
 	public String MenssagemAssertCadastroSucesso() throws Exception {
-		return ExcelUtils.getCellData(3, Constantes.mensagemAssertCadastroSucesso);
+		return ExcelUtils.getCellData(3, Constants.mensagemAssertCadastroSucesso);
 	}
 	
 	public String CondicaoAssertCadastroErro() throws Exception {
-		return ExcelUtils.getCellData(1, Constantes.condicaoAssertCadastroErro);
+		return ExcelUtils.getCellData(1, Constants.condicaoAssertCadastroErro);
 	}
 	
 	public String MenssagemAssertCadastroErro() throws Exception {
-		return ExcelUtils.getCellData(2, Constantes.mensagemAssertCadastroErro);
+		return ExcelUtils.getCellData(2, Constants.mensagemAssertCadastroErro);
 	}
 	
-	//PesquisaBarra
+	
 	public String PesquisaNaBarra() throws Exception {
-		return ExcelUtils.getCellData(1, Constantes.pesquisaBarra);
+		return ExcelUtils.getCellData(1, Constants.pesquisaBarra);
 	}
 	
 	public String PesquisaNaBarraErro() throws Exception {
-		return ExcelUtils.getCellData(5, Constantes.pesquisaBarraErro);
+		return ExcelUtils.getCellData(5, Constants.pesquisaBarraErro);
 	}
 	
 	public String CondicaoAssertBarra() throws Exception {
-		return ExcelUtils.getCellData(1, Constantes.condicaoAssertBarra);
+		return ExcelUtils.getCellData(1, Constants.condicaoAssertBarra);
 	}
 	
 	public String MenssagemAssertBarra() throws Exception {
-		return ExcelUtils.getCellData(2, Constantes.mensagemAssertBarra);
+		return ExcelUtils.getCellData(2, Constants.mensagemAssertBarra);
 	}
 	
-	//PesquisaCategoria
 	public String ClicaNoProduto() throws Exception {
-		return ExcelUtils.getCellData(5, Constantes.clicaProduto);
+		return ExcelUtils.getCellData(5, Constants.clicaProduto);
 	}
 	
 	public String CondicaoAssertMassaSucesso() throws Exception {
-		return ExcelUtils.getCellData(2, Constantes.condicaoAssertMassaSucesso);
+		return ExcelUtils.getCellData(2, Constants.condicaoAssertMassaSucesso);
 	}
 	
 	public String MenssagemAssertMassaSucesso() throws Exception {
-		return ExcelUtils.getCellData(1, Constantes.mensagemAssertMassaSucesso);
+		return ExcelUtils.getCellData(1, Constants.mensagemAssertMassaSucesso);
 	}
 	
 	public String CondicaoAssertMassaErro() throws Exception {
-		return ExcelUtils.getCellData(4, Constantes.condicaoAssertMassaErro);
+		return ExcelUtils.getCellData(4, Constants.condicaoAssertMassaErro);
 	}
 	
 	public String MenssagemAssertMassaErro() throws Exception {
-		return ExcelUtils.getCellData(3, Constantes.mensagemAssertMassaErro);
+		return ExcelUtils.getCellData(3, Constants.mensagemAssertMassaErro);
 	}
 	
 	public String QuantidadeProduto() throws Exception {
-		return ExcelUtils.getCellData(8, Constantes.quantidadeCat);
+		return ExcelUtils.getCellData(8, Constants.quantidadeCat);
 	}
 }

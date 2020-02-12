@@ -90,7 +90,7 @@ public class ExcelUtils {
 
 			// Constant variables Test Data path and Test Data file name
 
-			FileOutputStream fileOut = new FileOutputStream(Constantes.Path_TestData + Constantes.File_TestData);
+			FileOutputStream fileOut = new FileOutputStream(Constants.Path_TestData + Constants.File_TestData);
 
 			ExcelWBook.write(fileOut);
 

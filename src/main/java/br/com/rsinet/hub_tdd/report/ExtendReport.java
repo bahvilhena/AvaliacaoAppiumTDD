@@ -26,8 +26,8 @@ public class ExtendReport {
 	public static void setExtent() {
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/target/Reports "+pegaHora()+".html");
 
-		htmlReporter.config().setDocumentTitle("Automatização de Teste");// Titulo do documento
-		htmlReporter.config().setReportName("Reporte TDD");// Nome do reporte
+		htmlReporter.config().setDocumentTitle("Automatização de Teste");
+		htmlReporter.config().setReportName("Reporte TDD");
 		htmlReporter.config().setTheme(Theme.DARK);
 
 		extent = new ExtentReports();
@@ -49,7 +49,7 @@ public class ExtendReport {
 	}
 
 	public static void tearDown(ITestResult result, ExtentTest test, WebDriver driver) throws Exception {
-		String caminho = Prints.tirarPrints(driver, result.getName());
+		String caminho = PrintScreen.tirarPrints(driver, result.getName());
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, "Caso de teste falhou " + result.getName()); // Adiciona o nome na extenção reporte
 			test.log(Status.FAIL, "Caso de teste falhou " + result.getThrowable()); // Adiciona o erro/ exceção

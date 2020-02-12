@@ -10,17 +10,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-public class Prints {
+public class PrintScreen {
 
-	/* Atribui data e hora ao nomear o arquivo de print. */
+	
 	public static String timestamp() {
 		return new SimpleDateFormat(" yyyy-MM-dd HH-mm-ss").format(new Date());
 	}
 
-	/*
-	 * Cria um arquivo de imagem e atribui um nome a ele especificado na declaração
-	 * do metodo.
-	 */
+	
 	public static String tirarPrints(WebDriver driver, String nomeDaImagem) throws Exception {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String destino = System.getProperty("user.dir") + "/target/" + nomeDaImagem + timestamp() + ".png";

@@ -17,7 +17,7 @@ import br.com.rsinet.hub_tdd.driverFactory.DriverManager;
 import br.com.rsinet.hub_tdd.pageObjects.cadastroScreen;
 import br.com.rsinet.hub_tdd.pageObjects.HomeScreen;
 import br.com.rsinet.hub_tdd.report.ExtendReport;
-import br.com.rsinet.hub_tdd.utils.Constantes;
+import br.com.rsinet.hub_tdd.utils.Constants;
 import br.com.rsinet.hub_tdd.utils.ExcelUtils;
 import br.com.rsinet.hub_tdd.utils.MassaDados;
 import io.appium.java_client.AppiumDriver;
@@ -40,7 +40,7 @@ public class Cadastro {
 	public void iniciaTeste() throws Exception {
 		driver = DriverManager.iniciarApp();
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "Cadastro");
+		ExcelUtils.setExcelFile(Constants.Path_TestData + Constants.File_TestData, "Cadastro");
 		PageFactory.initElements(driver, this);
 		ScreenObject manager = new ScreenObject(driver);
 		cadastroScreen = manager.getCadastroScreen();
@@ -129,7 +129,7 @@ public class Cadastro {
 		String mensagem = massaDados.MenssagemAssertCadastroErro();
 		String pass = cadastroScreen.encontraSenhaErrada().getText();
 		
-//		Assert.assertTrue(pass.equals(condicao), mensagem);
+
 	}
 	
 	@AfterMethod
